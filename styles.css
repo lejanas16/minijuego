@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#basket {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    user-select: none;
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px;
+    user-select: none;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
