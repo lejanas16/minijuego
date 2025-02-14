@@ -10,6 +10,12 @@ document.addEventListener("mousemove", (event) => {
     basket.style.left = `${event.clientX - 20}px`;
 });
 
+// Mover la canasta en celulares con el dedo
+document.addEventListener("touchmove", (event) => {
+    let touch = event.touches[0];
+    basket.style.left = `${touch.clientX - 20}px`;
+});
+
 // Crear corazones cayendo
 function createHeart() {
     const heart = document.createElement("div");
